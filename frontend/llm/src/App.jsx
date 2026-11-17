@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import './App.css'
 
-const API_URL = 'https://noval-lm.onrender.com/api/llm'
+const API_URL = 'https://myllm-isx1.onrender.com/api/llm'
 
 const suggestions = [
   {
