@@ -6,7 +6,10 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(cors({
-    origin: process.env.FRONTEND_ORIGIN || 'http://localhost:5173'
+    origin: [
+        process.env.FRONTEND_ORIGIN || 'http://localhost:5173',
+        'https://myllm-puce.vercel.app'
+    ]
 }));
 
 app.use(express.text());
