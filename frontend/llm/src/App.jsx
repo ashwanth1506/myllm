@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from 'react'
 import './App.css'
 
+const API_URL = 'https://noval-lm.onrender.com/api/llm'
+
 const suggestions = [
   {
     title: 'Explain something',
@@ -343,7 +345,7 @@ function App() {
     setIsLoading(true)
 
     try {
-      const response = await fetch('/api/llm', {
+      const response = await fetch(API_URL, {
         method: 'POST',
         headers: {
           'Content-Type': 'text/plain',
