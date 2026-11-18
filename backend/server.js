@@ -47,6 +47,7 @@ app.post('/api/llm', async (req, res) => {
         }
 
         const data = await response.json();
+        console.log(data);
 
         res.send(
             data.choices[0].message.content
