@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3000;
 app.use(cors({
     origin: [
         process.env.FRONTEND_ORIGIN || 'http://localhost:5173',
-        'https://myllm-puce.vercel.app'
+        'https://myllm-puce.vercel.app','https://imposter-arena.vercel.app'
     ]
 }));
 
